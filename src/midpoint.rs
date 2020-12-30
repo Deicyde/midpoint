@@ -1,9 +1,9 @@
 
 ///Gives the type the ability to call the midpoint function
 pub trait Midpoint: Copy {
-    ///Returns the value halfway between the two arguments. If no such value exists, the result is rounded towards self.
+    ///Returns half the sum of self and other, rounded towards self.
     ///
-    ///##Guarentees
+    ///# Guarentees
     ///
     ///midpoint makes the following guarentees:
     /// - will not panic or cause undefined behavior
@@ -12,3 +12,4 @@ pub trait Midpoint: Copy {
     /// - will return NaN if either unput is NaN and INF if either input is INF, preferring NaN (for floating point types)
     fn midpoint(self, other: Self) -> Self;
 }
+

@@ -3,4 +3,5 @@ mod tests {
 }
 
 mod midpoint;
-use midpoint::*;
+
+pub use midpoint::Midpoint;
